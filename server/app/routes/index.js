@@ -1,19 +1,19 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/rest/api/:service/:method', function(req, res, next) {
+router.get('/api/:service/:method', function(req, res, next) {
   res.send('index', { title: req.method+' '+ req.url });
 });
 
-router.post('/rest/api/:service/:method', function(req, res, next) {
+router.post('/api/:service/:method', function(req, res, next) {
   res.send('index', { title: req.method+' '+ req.url });
 });
 
-router.put('/rest/api/:service/:method', function(req, res, next) {
+router.put('/api/:service/:method', function(req, res, next) {
   res.send('index', { title: req.method+' '+ req.url });
 });
 
-router.delete('/rest/api/:service/:method', function(req, res, next) {
+router.delete('/api/:service/:method', function(req, res, next) {
   res.send('index', { title: req.method+' '+ req.url });
 });
 
